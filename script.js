@@ -51,11 +51,15 @@ function setNewGoal() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const increaseButton = document.getElementById('increase');
-    const decreaseButton = document.getElementById('decrease');
-    const newGoalButton = document.getElementById('newGoal');
-
-    increaseButton.addEventListener('click', () => changeWaterAmount(50));
-    decreaseButton.addEventListener('click', () => changeWaterAmount(-50));
-    newGoalButton.addEventListener('click', setNewGoal);
+    document.body.addEventListener('click', function(event) {
+        if (event.target.id === 'increase') {
+            changeWaterAmount(50);
+        }
+        if (event.target.id === 'decrease') {
+            changeWaterAmount(-50);
+        }
+        if (event.target.id === 'newGoal') {
+            setNewGoal();
+        }
+    });
 });
