@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Water Tracker</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="goal-container">
+        <span id="goalDisplay">Goal: 2000 ml</span>
+        <button id="newGoal" onclick="setNewGoal()">New Goal</button>
+    </div>
+    <div class="widget">
+        <button id="decrease" onmousedown="startTimer()" onmouseup="clearTimer()" onmouseleave="clearTimer()" onclick="changeWaterAmount(-50)">-</button>
+        <span id="waterAmount">0 ml</span>
+        <button id="increase" onclick="changeWaterAmount(50)">+</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

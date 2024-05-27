@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+.goal-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.widget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures spacing between elements */
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    width: 250px;
+    height: 80px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 40px;
+    margin: 0 5px; /* Adds 5px margin on both sides */
+    cursor: pointer;
+}
+
+#increase {
+    background-color: #084887;
+}
+
+#decrease {
+    background-color: #909CC2;
+}
+
+span {
+    font-size: 20px;
+    color: black;
+}
+
+#newGoal {
+    background-color: #70d38c;
+    width: 120px;
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 0 5px; /* Adds 5px margin on both sides */
+    cursor: pointer;
+}
